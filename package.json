@@ -11,7 +11,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
-    "electron:build": "",
+    "electron:build": "electron-builder",
     "electron:start": "wait-on tcp:3000 && electron ."
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "wait-on": "^7.0.1"
   },
   "devDependencies": {
-    "electron": "^22.0.0"
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
   }
 }
